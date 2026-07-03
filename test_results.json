@@ -1,0 +1,5193 @@
+{
+  "get_current_user": {
+    "status": "PASS",
+    "result": {
+      "id": "1",
+      "name": "系统管理员",
+      "oid": "1",
+      "language": "zh-CN"
+    }
+  },
+  "get_user_count": {
+    "status": "PASS",
+    "result": 1
+  },
+  "list_users": {
+    "status": "PASS",
+    "result": null
+  },
+  "list_datasources": {
+    "status": "PASS",
+    "result": [
+      {
+        "id": "0",
+        "name": "root",
+        "leaf": false,
+        "weight": 7,
+        "extraFlag": 0,
+        "extraFlag1": 0,
+        "type": "mysql",
+        "children": [
+          {
+            "id": "1257372248600350720",
+            "name": "不良报废数据源",
+            "leaf": false,
+            "weight": 9,
+            "extraFlag": 25,
+            "extraFlag1": 0,
+            "type": "folder",
+            "children": [
+              {
+                "id": "1259150604970889216",
+                "name": "df25_批次报废还原报表",
+                "leaf": true,
+                "weight": 9,
+                "extraFlag": 15,
+                "extraFlag1": 0,
+                "type": "API",
+                "children": null,
+                "ext": null
+              },
+              {
+                "id": "1259149073064267776",
+                "name": "df24_报废材料明细报表",
+                "leaf": true,
+                "weight": 9,
+                "extraFlag": 15,
+                "extraFlag1": 0,
+                "type": "API",
+                "children": null,
+                "ext": null
+              },
+              {
+                "id": "1259147967231823872",
+                "name": "df21_批次工单数据报表",
+                "leaf": true,
+                "weight": 9,
+                "extraFlag": 15,
+                "extraFlag1": 0,
+                "type": "API",
+                "children": null,
+                "ext": null
+              },
+              {
+                "id": "1259139888108933120",
+                "name": "df23_不良聚合报表",
+                "leaf": true,
+                "weight": 9,
+                "extraFlag": 15,
+                "extraFlag1": 0,
+                "type": "API",
+                "children": null,
+                "ext": null
+              },
+              {
+                "id": "1257380933938581504",
+                "name": "Excel_Test",
+                "leaf": false,
+                "weight": 9,
+                "extraFlag": 25,
+                "extraFlag1": 0,
+                "type": "folder",
+                "children": [
+                  {
+                    "id": "1257386369345523712",
+                    "name": "df25_批次报废还原报表",
+                    "leaf": true,
+                    "weight": 9,
+                    "extraFlag": 16,
+                    "extraFlag1": 0,
+                    "type": "Excel",
+                    "children": null,
+                    "ext": null
+                  },
+                  {
+                    "id": "1257386217620770816",
+                    "name": "df24_报废材料明细",
+                    "leaf": true,
+                    "weight": 9,
+                    "extraFlag": 16,
+                    "extraFlag1": 0,
+                    "type": "Excel",
+                    "children": null,
+                    "ext": null
+                  },
+                  {
+                    "id": "1257386103992881152",
+                    "name": "df23_不良聚合报表",
+                    "leaf": true,
+                    "weight": 9,
+                    "extraFlag": 16,
+                    "extraFlag1": 0,
+                    "type": "Excel",
+                    "children": null,
+                    "ext": null
+                  },
+                  {
+                    "id": "1257385986590117888",
+                    "name": "df22_报废数据明细",
+                    "leaf": true,
+                    "weight": 9,
+                    "extraFlag": 16,
+                    "extraFlag1": 0,
+                    "type": "Excel",
+                    "children": null,
+                    "ext": null
+                  }
+                ],
+                "ext": null
+              }
+            ],
+            "ext": null
+          },
+          {
+            "id": "1232396372540526592",
+            "name": "MUR_API",
+            "leaf": true,
+            "weight": 9,
+            "extraFlag": 15,
+            "extraFlag1": 0,
+            "type": "API",
+            "children": null,
+            "ext": null
+          },
+          {
+            "id": "1231688767446847488",
+            "name": "物料利用率查询结果_20260318_164947",
+            "leaf": true,
+            "weight": 9,
+            "extraFlag": 16,
+            "extraFlag1": 0,
+            "type": "Excel",
+            "children": null,
+            "ext": null
+          },
+          {
+            "id": "1216000094999023616",
+            "name": "批次维度API",
+            "leaf": true,
+            "weight": 9,
+            "extraFlag": 15,
+            "extraFlag1": 0,
+            "type": "API",
+            "children": null,
+            "ext": null
+          },
+          {
+            "id": "1215779398364565504",
+            "name": "时间维度API",
+            "leaf": true,
+            "weight": 9,
+            "extraFlag": 15,
+            "extraFlag1": 0,
+            "type": "API",
+            "children": null,
+            "ext": null
+          },
+          {
+            "id": "1214896022690598912",
+            "name": "时间维度",
+            "leaf": true,
+            "weight": 9,
+            "extraFlag": 16,
+            "extraFlag1": 0,
+            "type": "Excel",
+            "children": null,
+            "ext": null
+          },
+          {
+            "id": "1214667507114315776",
+            "name": "批次维度",
+            "leaf": true,
+            "weight": 9,
+            "extraFlag": 16,
+            "extraFlag1": 0,
+            "type": "Excel",
+            "children": null,
+            "ext": null
+          },
+          {
+            "id": "985188400292302848",
+            "name": "Demo",
+            "leaf": true,
+            "weight": 9,
+            "extraFlag": 27,
+            "extraFlag1": 0,
+            "type": "mysql",
+            "children": null,
+            "ext": null
+          }
+        ],
+        "ext": null
+      }
+    ]
+  },
+  "get_datasource_types": {
+    "status": "PASS",
+    "result": [
+      "folder",
+      "API",
+      "Excel",
+      "ExcelRemote",
+      "mysql",
+      "impala",
+      "mariadb",
+      "StarRocks",
+      "es",
+      "doris",
+      "TiDB",
+      "oracle",
+      "pg",
+      "redshift",
+      "db2",
+      "ck",
+      "h2",
+      "sqlServer",
+      "mongo"
+    ]
+  },
+  "list_datasets": {
+    "status": "PASS",
+    "result": [
+      {
+        "id": "0",
+        "name": "root",
+        "leaf": false,
+        "weight": 7,
+        "extraFlag": 0,
+        "extraFlag1": 0,
+        "type": null,
+        "children": [
+          {
+            "id": "1259160149965279232",
+            "name": "test_24",
+            "leaf": true,
+            "weight": 9,
+            "extraFlag": 0,
+            "extraFlag1": 0,
+            "type": null,
+            "children": null,
+            "ext": null
+          },
+          {
+            "id": "1259143095543533568",
+            "name": "test",
+            "leaf": true,
+            "weight": 9,
+            "extraFlag": 0,
+            "extraFlag1": 0,
+            "type": null,
+            "children": null,
+            "ext": null
+          },
+          {
+            "id": "1257377080476307456",
+            "name": "报废率数据集",
+            "leaf": false,
+            "weight": 9,
+            "extraFlag": 0,
+            "extraFlag1": 0,
+            "type": null,
+            "children": [
+              {
+                "id": "1258615372966400000",
+                "name": "过滤维度数据集",
+                "leaf": true,
+                "weight": 9,
+                "extraFlag": 0,
+                "extraFlag1": 0,
+                "type": null,
+                "children": null,
+                "ext": null
+              },
+              {
+                "id": "1257875783783944192",
+                "name": "批次不良原因工序",
+                "leaf": true,
+                "weight": 9,
+                "extraFlag": 0,
+                "extraFlag1": 0,
+                "type": null,
+                "children": null,
+                "ext": null
+              },
+              {
+                "id": "1257777977563942912",
+                "name": "批次总不良",
+                "leaf": true,
+                "weight": 9,
+                "extraFlag": 0,
+                "extraFlag1": 0,
+                "type": null,
+                "children": null,
+                "ext": null
+              },
+              {
+                "id": "1257387824144060416",
+                "name": "批次材料不良及占比",
+                "leaf": true,
+                "weight": 9,
+                "extraFlag": 0,
+                "extraFlag1": 0,
+                "type": null,
+                "children": null,
+                "ext": null
+              },
+              {
+                "id": "1257382542617743360",
+                "name": "TEST",
+                "leaf": false,
+                "weight": 9,
+                "extraFlag": 0,
+                "extraFlag1": 0,
+                "type": null,
+                "children": null,
+                "ext": null
+              }
+            ],
+            "ext": null
+          },
+          {
+            "id": "1231720097408749568",
+            "name": "物料利用率数据集",
+            "leaf": false,
+            "weight": 9,
+            "extraFlag": 0,
+            "extraFlag1": 0,
+            "type": null,
+            "children": [
+              {
+                "id": "1231724967830360064",
+                "name": "物料利用率_L2_批次级",
+                "leaf": true,
+                "weight": 9,
+                "extraFlag": 0,
+                "extraFlag1": 0,
+                "type": null,
+                "children": null,
+                "ext": null
+              },
+              {
+                "id": "1231690692774989824",
+                "name": "物料利用率_L3_材料级",
+                "leaf": true,
+                "weight": 9,
+                "extraFlag": 0,
+                "extraFlag1": 0,
+                "type": null,
+                "children": null,
+                "ext": null
+              }
+            ],
+            "ext": null
+          },
+          {
+            "id": "1231686134854193152",
+            "name": "良率看板数据集",
+            "leaf": false,
+            "weight": 9,
+            "extraFlag": 0,
+            "extraFlag1": 0,
+            "type": null,
+            "children": [
+              {
+                "id": "1214916213772259328",
+                "name": "时间维度",
+                "leaf": true,
+                "weight": 9,
+                "extraFlag": 0,
+                "extraFlag1": 0,
+                "type": null,
+                "children": null,
+                "ext": null
+              },
+              {
+                "id": "1214669589594640384",
+                "name": "批次维度",
+                "leaf": true,
+                "weight": 9,
+                "extraFlag": 0,
+                "extraFlag1": 0,
+                "type": null,
+                "children": null,
+                "ext": null
+              }
+            ],
+            "ext": null
+          },
+          {
+            "id": "1216729841177595904",
+            "name": "时间维度-test",
+            "leaf": true,
+            "weight": 9,
+            "extraFlag": 0,
+            "extraFlag1": 0,
+            "type": null,
+            "children": null,
+            "ext": null
+          },
+          {
+            "id": "1215997941483966464",
+            "name": "api",
+            "leaf": false,
+            "weight": 9,
+            "extraFlag": 0,
+            "extraFlag1": 0,
+            "type": null,
+            "children": [
+              {
+                "id": "1232397144737058816",
+                "name": "MUR_API",
+                "leaf": true,
+                "weight": 9,
+                "extraFlag": 0,
+                "extraFlag1": 0,
+                "type": null,
+                "children": null,
+                "ext": null
+              },
+              {
+                "id": "1216000489599143936",
+                "name": "批次维度",
+                "leaf": true,
+                "weight": 9,
+                "extraFlag": 0,
+                "extraFlag1": 0,
+                "type": null,
+                "children": null,
+                "ext": null
+              },
+              {
+                "id": "1215998131657904128",
+                "name": "时间维度",
+                "leaf": true,
+                "weight": 9,
+                "extraFlag": 0,
+                "extraFlag1": 0,
+                "type": null,
+                "children": null,
+                "ext": null
+              }
+            ],
+            "ext": null
+          },
+          {
+            "id": "985189269226262528",
+            "name": "【官方示例】",
+            "leaf": false,
+            "weight": 9,
+            "extraFlag": 0,
+            "extraFlag1": 0,
+            "type": null,
+            "children": [
+              {
+                "id": "985189703189925888",
+                "name": "茶饮原料费用",
+                "leaf": true,
+                "weight": 9,
+                "extraFlag": 0,
+                "extraFlag1": 0,
+                "type": null,
+                "children": null,
+                "ext": null
+              },
+              {
+                "id": "985189053949415424",
+                "name": "茶饮订单明细",
+                "leaf": true,
+                "weight": 9,
+                "extraFlag": 0,
+                "extraFlag1": 0,
+                "type": null,
+                "children": null,
+                "ext": null
+              }
+            ],
+            "ext": null
+          }
+        ],
+        "ext": null
+      }
+    ]
+  },
+  "list_dashboards": {
+    "status": "PASS",
+    "result": null
+  },
+  "get_export_stats": {
+    "status": "PASS",
+    "result": {
+      "IN_PROGRESS": 0,
+      "ALL": 0,
+      "SUCCESS": 0,
+      "FAILED": 0,
+      "PENDING": 0
+    }
+  },
+  "list_export_tasks": {
+    "status": "PASS",
+    "result": null
+  },
+  "list_templates": {
+    "status": "PASS",
+    "result": []
+  },
+  "list_market_templates": {
+    "status": "PASS",
+    "result": {
+      "baseUrl": "https://cdn0-templates-dataease-cn.fit2cloud.com",
+      "categories": [
+        {
+          "slug": "recent",
+          "value": "recent",
+          "label": "最近使用",
+          "source": "public"
+        },
+        {
+          "slug": "suggest",
+          "value": "suggest",
+          "label": "推荐",
+          "source": "public"
+        },
+        {
+          "slug": "platform_docking",
+          "value": "PLATFORM_DOCKING",
+          "label": "平台对接",
+          "source": "market"
+        },
+        {
+          "slug": "manufacturing_industry",
+          "value": "MANUFACTURING_INDUSTRY",
+          "label": "制造行业",
+          "source": "market"
+        },
+        {
+          "slug": "wholesale_and_retail",
+          "value": "WHOLESALE_AND_RETAIL",
+          "label": "批发零售",
+          "source": "market"
+        },
+        {
+          "slug": "financial_finance",
+          "value": "FINANCIAL_FINANCE",
+          "label": "金融财务",
+          "source": "market"
+        },
+        {
+          "slug": "media_industry",
+          "value": "MEDIA_INDUSTRY",
+          "label": "媒体行业",
+          "source": "market"
+        },
+        {
+          "slug": "energy_industry",
+          "value": "ENERGY_INDUSTRY",
+          "label": "能源行业",
+          "source": "market"
+        },
+        {
+          "slug": "electronic_commerce",
+          "value": "ELECTRONIC_COMMERCE",
+          "label": "电子商务",
+          "source": "market"
+        },
+        {
+          "slug": "political_party_affairs",
+          "value": "POLITICAL_PARTY_AFFAIRS",
+          "label": "政党事务",
+          "source": "market"
+        },
+        {
+          "slug": "human_resources_management",
+          "value": "HUMAN_RESOURCES_MANAGEMENT",
+          "label": "人资管理",
+          "source": "market"
+        },
+        {
+          "slug": "open_source_insights",
+          "value": "OPEN_SOURCE_INSIGHTS",
+          "label": "开源洞察",
+          "source": "market"
+        },
+        {
+          "slug": "education_industry",
+          "value": "EDUCATION_INDUSTRY",
+          "label": "教育行业",
+          "source": "market"
+        },
+        {
+          "slug": "tourism_industry",
+          "value": "TOURISM_INDUSTRY",
+          "label": "旅游行业",
+          "source": "market"
+        },
+        {
+          "slug": "promotion_introduction",
+          "value": "PROMOTION_INTRODUCTION",
+          "label": "宣传介绍",
+          "source": "market"
+        },
+        {
+          "slug": "medical_industry",
+          "value": "MEDICAL_INDUSTRY",
+          "label": "医疗行业",
+          "source": "market"
+        },
+        {
+          "slug": "transportation",
+          "value": "TRANSPORTATION",
+          "label": "交通运输",
+          "source": "market"
+        },
+        {
+          "slug": "real_estate_industry",
+          "value": "REAL_ESTATE_INDUSTRY",
+          "label": "地产行业",
+          "source": "market"
+        },
+        {
+          "slug": "consumer_industry",
+          "value": "CONSUMER_INDUSTRY",
+          "label": "消费行业",
+          "source": "market"
+        },
+        {
+          "slug": "agricultural_planting",
+          "value": "AGRICULTURAL_PLANTING",
+          "label": "农业种植",
+          "source": "market"
+        },
+        {
+          "slug": "e8e47792-bf64-422d-9078-5cb07b686f01",
+          "value": "e8e47792-bf64-422d-9078-5cb07b686f01",
+          "label": "test",
+          "source": "manage"
+        }
+      ],
+      "contents": [
+        {
+          "id": "d083d066-2199-4a57-beb9-340a55ed959a",
+          "title": "物料利用率-看板-release-v1.1",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/static-resource/template-d083d066-2199-4a57-beb9-340a55ed959a.jpeg",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 1774851492720,
+          "templateType": "PANEL",
+          "source": "manage",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "test",
+              "slug": null
+            },
+            {
+              "id": null,
+              "name": "最近使用",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "test",
+            "最近使用"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/static-resource/template-d083d066-2199-4a57-beb9-340a55ed959a.jpeg"
+          }
+        },
+        {
+          "id": "app-tLcQe",
+          "title": "JumpServer-V3-运维安全审计大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/运维安全审计.jpg",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "app",
+          "categories": [
+            {
+              "id": null,
+              "name": "平台对接",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "平台对接"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/运维安全审计大屏-APP.DET2APP"
+          }
+        },
+        {
+          "id": "app-hqzOb",
+          "title": "MaxKB 系统数据概览 1.0",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/MaxKB%20系统数据概览.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "app",
+          "categories": [
+            {
+              "id": null,
+              "name": "平台对接",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "平台对接"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/MaxKB%20系统数据概览-APP%20.DET2APP"
+          }
+        },
+        {
+          "id": "app-ZNHeW",
+          "title": "MaxKB 系统数据概览 2.0",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/MaxKB%20系统数据概览.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "app",
+          "categories": [
+            {
+              "id": null,
+              "name": "平台对接",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "平台对接"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/MaxKB%20系统数据概览-APP%20.DET2APP"
+          }
+        },
+        {
+          "id": "app-kkbCx",
+          "title": "智慧城市综合监管一体化平台",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/WechatIMG621.jpg",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "政党事务",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "政党事务"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "http://192.168.2.101:9080/#/de-link/2zW2DxIZ"
+          }
+        },
+        {
+          "id": "app-vKJDD",
+          "title": "智慧工厂可视化大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/智慧工厂可视化大屏.jpg",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "制造行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "制造行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "https://democenter.fit2cloud.cn:23154/#/de-link/5RXWYKgY"
+          }
+        },
+        {
+          "id": "app-KFyCW",
+          "title": "冰品业务进销存数据",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/冰品业务进销存数据.jpg",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "批发零售",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "批发零售"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "https://democenter.fit2cloud.cn:23154/#/de-link/nML3KM5c"
+          }
+        },
+        {
+          "id": "app-obuUV",
+          "title": "供应链物流驾驶舱大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/供应链物流驾驶舱大屏.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "交通运输",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "交通运输"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/供应链物流驾驶舱大屏-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-ICoRz",
+          "title": "内蒙古生态环境大数据平台",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/内蒙古生态资源.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "旅游行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "旅游行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/内蒙古生态资源-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-tiSeU",
+          "title": "电商运营数据平台",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/电商运营数据平台.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "电子商务",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "电子商务"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/电商运营数据平台-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-MVxWY",
+          "title": "社区智慧化数据平台",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/社区智慧化数据平台.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "地产行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "地产行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/社区智慧化数据平台-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-YmcJo",
+          "title": "媒体设备管理数据大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/媒体设备管理数据大屏.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "媒体行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "媒体行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/媒体设备管理数据大屏-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-PwRYV",
+          "title": "网络系统数据监控平台",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/网络系统数据监控平台.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "平台对接",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "平台对接"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/网络系统数据监控平台-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-vKsXu",
+          "title": "资源管理大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/资源管理大屏.gif",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "平台对接",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "平台对接"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/资源管理大屏-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-nPJtg",
+          "title": "药店经营数据平台",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/药店经营数据平台.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "医疗行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "医疗行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/药店经营数据平台-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-dWdvo",
+          "title": "智慧社区综合管理服务平台",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/智慧社区综合管理服务平台.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "宣传介绍",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "宣传介绍"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/智慧社区综合管理服务平台-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-vyLsj",
+          "title": "广州某某机场看板",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/广州xx机场看板.jpg",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "PANEL",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "交通运输",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "交通运输"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/广州xx机场看板-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-ewweD",
+          "title": "四川省工业园区智慧环保平台",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/四川省工业园区智慧环保平台.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "能源行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "能源行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/四川省工业园区智慧环保平台-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-ntHIp",
+          "title": "春节大数据可视化大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/春节大数据可视化大屏.jpg",
+          "showFlag": true,
+          "suggest": "Y",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "消费行业",
+              "slug": null
+            },
+            {
+              "id": null,
+              "name": "推荐",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "消费行业",
+            "推荐"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/春节大数据可视化大屏-TEMPLATE%20-xivm.DET2"
+          }
+        },
+        {
+          "id": "app-jvcwH",
+          "title": "某行业项目管理看板",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/某行业项目管理看板.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "人资管理",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "人资管理"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/某行业项目管理看板-TEMPLATE-oqns.DET2"
+          }
+        },
+        {
+          "id": "app-nzSWN",
+          "title": "MaxKB 系统数据概览",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/MaxKB%20系统数据概览.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "平台对接",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "平台对接"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/MaxKB%20系统数据概览-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-BsaMQ",
+          "title": "2024圣诞节海外市场消费报告",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/2024圣诞节海外市场消费报告.jpg",
+          "showFlag": true,
+          "suggest": "Y",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "消费行业",
+              "slug": null
+            },
+            {
+              "id": null,
+              "name": "推荐",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "消费行业",
+            "推荐"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/2024圣诞节海外市场消费报告-TEMPLATE%20.DET2"
+          }
+        },
+        {
+          "id": "app-dlElx",
+          "title": "Zabbix 告警监控平台（基于 v5.4.0 版本 Zabbix）",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/Zabbix告警监控平台-复刻-仪表板.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "PANEL",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "平台对接",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "平台对接"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/Zabbix告警大屏-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-AzNPt",
+          "title": "年度销售总结报表",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/年度销售总结报表.png",
+          "showFlag": true,
+          "suggest": "Y",
+          "recentUseTime": 0,
+          "templateType": "PANEL",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "人资管理",
+              "slug": null
+            },
+            {
+              "id": null,
+              "name": "推荐",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "人资管理",
+            "推荐"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/年度销售总结报表.DET2"
+          }
+        },
+        {
+          "id": "app-yzjwT",
+          "title": "北京近年房价变化趋势看板",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/北京房价分析.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "PANEL",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "地产行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "地产行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/北京房价-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-ksfrc",
+          "title": "供应链数据可视化大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/公司供应链数据大屏.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "人资管理",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "人资管理"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/公司供应链数据大屏-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-VQSeV",
+          "title": "某电商平台商品运营看板",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/某平台商品运营看板.png",
+          "showFlag": true,
+          "suggest": "Y",
+          "recentUseTime": 0,
+          "templateType": "PANEL",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "电子商务",
+              "slug": null
+            },
+            {
+              "id": null,
+              "name": "推荐",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "电子商务",
+            "推荐"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/某平台商品运营看板-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-hlGyL",
+          "title": "某公司 TAPD 项目管理看板",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/TAPD%20仪表板.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "PANEL",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "平台对接",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "平台对接"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/TAPD%20仪表板-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-ghZfR",
+          "title": "智慧城市数据平台",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/智慧城市数据平台.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "宣传介绍",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "宣传介绍"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/智慧城市数据平台-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-snfEZ",
+          "title": "地铁运营数据大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/地铁运营数据大屏-mapk.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "交通运输",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "交通运输"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/地铁运营数据大屏-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-EPRuV",
+          "title": "住房公积金数据平台",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/住房公积金数据平台.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "政党事务",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "政党事务"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/住房公积金数据平台-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-eBLfw",
+          "title": "智慧旅游数据平台",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/智慧旅游数据平台.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "旅游行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "旅游行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/智慧旅游数据平台-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-RJOOf",
+          "title": "全国人才流动中心数据大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/全国人才流动中心.jpg",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "宣传介绍",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "宣传介绍"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/全国人才流动中心-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-hrmoA",
+          "title": "DataEase 资源分析大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/DataEase%20日志分析大屏.jpg",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "平台对接",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "平台对接"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/DataEase%20日志分析大屏-样式模版.DET2"
+          }
+        },
+        {
+          "id": "app-eklwY",
+          "title": "DataEase 资源分析大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/DataEase%20日志分析大屏.jpg",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "app",
+          "categories": [
+            {
+              "id": null,
+              "name": "平台对接",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "平台对接"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/DataEase%20日志分析大屏-应用模版.DET2APP"
+          }
+        },
+        {
+          "id": "app-MYYhL",
+          "title": "近年国内旅游分析大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/国内旅游分析.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "旅游行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "旅游行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/国内旅游分析大屏-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-krnbU",
+          "title": "2023年中国新能源终端销量报告",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/2023新能源汽车行业报告.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "能源行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "能源行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/2023新能源汽车行业报告-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-dkIsN",
+          "title": "MeterSphere 自动化测试平台质量大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/质量大屏.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "app",
+          "categories": [
+            {
+              "id": null,
+              "name": "平台对接",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "平台对接"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/质量大屏应用模板-APP.DET2APP"
+          }
+        },
+        {
+          "id": "app-Oelhx",
+          "title": "双十一电商销售数据趋势分析-2023年详情",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/双十一电商销售数据趋势分析-2023年详情.jpg",
+          "showFlag": true,
+          "suggest": "Y",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "电子商务",
+              "slug": null
+            },
+            {
+              "id": null,
+              "name": "推荐",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "电子商务",
+            "推荐"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/双十一电商销售数据趋势分析-2023年详情%20TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-kbUYG",
+          "title": "双十一电商销售数据趋势分析-总览",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/双十一电商销售数据趋势分析-总览.jpg",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "电子商务",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "电子商务"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/双十一电商销售数据趋势分析-总览%20TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-vKXtx",
+          "title": "2024中国企业500强数据报告",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/2024中国企业500强数据报告.jpg",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "宣传介绍",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "宣传介绍"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/2024中国企业500强数据报告-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-IQnaj",
+          "title": "电商后台管理系统",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/电商后台管理系统.jpg",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "电子商务",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "电子商务"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/电商后台管理系统-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-GOzsO",
+          "title": "飞致云开源大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/飞致云开源大屏.jpg",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "开源洞察",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "开源洞察"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/飞致云开源大屏-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-aJDVx",
+          "title": "某购物平台销售情况",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/某购物平台销售情况.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "PANEL",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "批发零售",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "批发零售"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/某购物平台销售情况-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-ApLkc",
+          "title": "医疗资源大数据",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/医疗资源大数据.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "医疗行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "医疗行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/医疗资源大数据-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-saYzI",
+          "title": "Zabbix 监控告警大屏应用模板 （基于 v5.4.0 版本 Zabbix）",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/Zabbix%20监控告警大屏-cvdj.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "app",
+          "categories": [
+            {
+              "id": null,
+              "name": "平台对接",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "平台对接"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/Zabbix%20监控告警大屏-应用-APP.DET2APP"
+          }
+        },
+        {
+          "id": "app-mJHvE",
+          "title": "上海市二手房数据看板",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/上海市二手房数据看板.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "PANEL",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "地产行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "地产行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/上海市二手房数据看板-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-pTEbE",
+          "title": "能源公司年度业绩看板",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/能源公司年度业绩看板.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "PANEL",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "能源行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "能源行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/能源公司年度业绩看板-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-NOkzI",
+          "title": "深圳医疗资源看板",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/深圳医疗资源看板.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "PANEL",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "医疗行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "医疗行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/深圳医疗资源看板-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-fCJHm",
+          "title": "DataEase 系统数据大屏（应用模板）",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/DataEase%20系统数据大屏.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "app",
+          "categories": [
+            {
+              "id": null,
+              "name": "平台对接",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "平台对接"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/DataEase%20系统数据大屏-APP.DET2APP"
+          }
+        },
+        {
+          "id": "app-JYanO",
+          "title": "DataEase 系统数据大屏（样式模板）",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/DataEase%20系统数据大屏.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "平台对接",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "平台对接"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/DataEase%20系统数据大屏-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-pFTKA",
+          "title": "生产管理数据大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/生产管理数据大屏.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "制造行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "制造行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/生产管理数据大屏-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-HqGGR",
+          "title": "某公司金融数据大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/某公司金融数据大屏.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "金融财务",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "金融财务"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/某公司金融数据大屏-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-KgFBX",
+          "title": "2024 巴黎奥运会中国队战绩报告",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/2024%20巴黎奥运会中国队战绩报告.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "媒体行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "媒体行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/2024%20巴黎奥运会中国队战绩报告-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-dKFhA",
+          "title": "生成式 Al 商业落地数据报告",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/生成式%20Al%20商业落地数据报告.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "宣传介绍",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "宣传介绍"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/生成式%20Al%20商业落地数据报告-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-DkptH",
+          "title": "业务生产数据大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/业务生产数据大屏.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "制造行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "制造行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/业务生产数据大屏-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-qelmT",
+          "title": "中国月饼行业消费趋势报告（深色版）",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/中国月饼行业消费趋势报告（深色）.jpg",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "批发零售",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "批发零售"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/中国月饼行业消费趋势报告（深色）-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-CtXfI",
+          "title": "中国月饼行业消费趋势报告（浅色版）",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/中国月饼行业消费趋势报告（浅色）.jpg",
+          "showFlag": true,
+          "suggest": "Y",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "批发零售",
+              "slug": null
+            },
+            {
+              "id": null,
+              "name": "推荐",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "批发零售",
+            "推荐"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/中国月饼行业消费趋势报告（浅色）-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-HowYy",
+          "title": " DataEase 基础数据分析大屏（应用模板）",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/DataEase%20基础数据分析大屏.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "app",
+          "categories": [
+            {
+              "id": null,
+              "name": "平台对接",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "平台对接"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/DataEase%20基础数据分析大屏-APP.DET2APP"
+          }
+        },
+        {
+          "id": "app-jdgpS",
+          "title": "某城市智慧电力监控平台",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/某城市智慧电力监控平台.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "能源行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "能源行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/某城市智慧电力监控平台-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-xlIJe",
+          "title": "系统访问统计看板",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/系统访问统计看板-qjjs.jpg",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "PANEL",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "平台对接",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "平台对接"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/系统访问统计看版-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-KZMnx",
+          "title": "销售管理驾驶舱",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/销售管理驾驶舱-rcow.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "批发零售",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "批发零售"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/销售管理驾驶舱-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-QcsfV",
+          "title": "小红书宠物行业笔记数据分析报告",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/小红书宠物行业笔记数据分析报告.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "媒体行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "媒体行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/小红书宠物行业笔记数据分析报告-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-hgHcB",
+          "title": "研修院人力资源看板",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/研修院人力资源看板.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "PANEL",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "人资管理",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "人资管理"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/研修院人力资源看板-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-ohOyv",
+          "title": "药品企业大数据监管平台",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/药品企业大数据监管平台.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "医疗行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "医疗行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/药品企业大数据监管平台-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-ZErak",
+          "title": "业务全景监控大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/业务全景监控大屏.jpg",
+          "showFlag": true,
+          "suggest": "Y",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "平台对接",
+              "slug": null
+            },
+            {
+              "id": null,
+              "name": "推荐",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "平台对接",
+            "推荐"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/业务全景监控大屏-TEMPLATE%20.DET2"
+          }
+        },
+        {
+          "id": "app-RNAnY",
+          "title": "医院数据展示大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/医院数据展示大屏.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "医疗行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "医疗行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/医院数据展示大屏-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-pUfTB",
+          "title": "云管理平台数据大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/云管理平台数据大屏-jpso.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "平台对接",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "平台对接"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/云管理平台数据大屏-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-isoPr",
+          "title": "云管理平台仪表板",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/云管理平台仪表板.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "PANEL",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "平台对接",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "平台对接"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/云管理平台仪表板-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-VlAAT",
+          "title": "云平台组织资源数据大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/云平台组织资源大屏.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "平台对接",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "平台对接"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/云平台组织资源大屏-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-etcSA",
+          "title": "智慧养老系统数据大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/智慧养老系统数据大屏-wdvj.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "医疗行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "医疗行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/智慧养老系统数据大屏-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-cxDkx",
+          "title": "智能生产驾驶舱",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/智能生产驾驶舱-rhfl.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "制造行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "制造行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/智能生产驾驶舱-TEMPLATE%20.DET2"
+          }
+        },
+        {
+          "id": "app-wCXYT",
+          "title": "Jira 业务数据看板",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/Jira%20业务数据看板.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "平台对接",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "平台对接"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/Jira%20业务数据看板-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-Mgtrm",
+          "title": "SSO平台统计大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/SSO%20平台统计大屏.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "平台对接",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "平台对接"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/SSO平台统计大屏-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-UHgoB",
+          "title": "Zabbix 监控告警大屏（基于 v5.4.0 版本 Zabbix）",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/Zabbix%20监控告警大屏-qohx.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "平台对接",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "平台对接"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/Zabbix%20监控告警大屏-TEMPLATE-docu.DET2"
+          }
+        },
+        {
+          "id": "app-aplVu",
+          "title": "山海旅游监管智能平台",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/山海旅游监管智能平台.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "旅游行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "旅游行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/山海旅游监管智能平台-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-jkSmU",
+          "title": "人力资源数据大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/人力资源数据大屏-ywhi.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "人资管理",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "人资管理"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/人力资源数据大屏-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-xzyMl",
+          "title": "某公司财务数据",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/某公司财务数据.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "人资管理",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "人资管理"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/某公司财务数据-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-IBIaZ",
+          "title": "库存大数据控制平台",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/库存大数据控制平台.jpg",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "制造行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "制造行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/库存大数据控制平台TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-fIymg",
+          "title": "城市生态环境状况看板",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/城市生态环境狀况看板.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "宣传介绍",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "宣传介绍"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/城市生态环境狀况看板-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-JpgnA",
+          "title": "产品销售数据仪表板",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/某产品销售数据大屏.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "批发零售",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "批发零售"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/某产品销售数据大屏-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-AmuxH",
+          "title": "禅道业务数据分析大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/禅道业务数据分析大屏.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "平台对接",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "平台对接"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/禅道业务数据分析大屏-TEMPLATE%20.DET2"
+          }
+        },
+        {
+          "id": "app-eKDFg",
+          "title": "部门销售数据",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/部门销售数据.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "批发零售",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "批发零售"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/部门销售数据-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-BLqTU",
+          "title": "2022年消费者权益保护",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/消费者权益保护.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "消费行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "消费行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/消费者权益保护-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-gImEs",
+          "title": "阿勒泰地区旅游数据",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/阿勒泰地区旅游数据.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "旅游行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "旅游行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/阿勒泰地区旅游数据-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-HOIyp",
+          "title": "某通讯公司运营数据",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/某通讯公司运营数据.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "人资管理",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "人资管理"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/某通讯公司运营数据-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-gaawP",
+          "title": "2024 高考大数据看板",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/2024%20高考大数据看板-hauz.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "教育行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "教育行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/2024%20高考大数据看板-TEMPLATE%20-vdsx.DET2"
+          }
+        },
+        {
+          "id": "app-qjqBY",
+          "title": "2023 文创行业数据大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/2024年文创行业数据大屏.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "批发零售",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "批发零售"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/2024年文创行业数据大屏-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-QtcOG",
+          "title": "DataEase 基础数据分析大屏（样式模板）",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/DataEase%20基础数据分析大屏.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "平台对接",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "平台对接"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/DataEase%20基础数据分析大屏-TEMPLATE-aorh.DET2"
+          }
+        },
+        {
+          "id": "app-ALfOu",
+          "title": "金融数据实时监控大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/金融数据实时监控大屏.png",
+          "showFlag": true,
+          "suggest": "Y",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "金融财务",
+              "slug": null
+            },
+            {
+              "id": null,
+              "name": "推荐",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "金融财务",
+            "推荐"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/金融数据实时监控大屏-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-VvVNZ",
+          "title": "某高中全年级学生情况概览",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/高中全年级学生情况概览.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "PANEL",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "教育行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "教育行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/某高中全年级学生情况概览-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-YCiKz",
+          "title": "生产管理可视化大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/生产管理可视化大屏.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "制造行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "制造行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/生产管理可视化大屏-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-KIHcY",
+          "title": "采购管理可视化大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/采购管理可视化大屏.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "制造行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "制造行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/采购管理可视化大屏-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-plINW",
+          "title": "库存管理可视化大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/库存管理可视化大屏.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "制造行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "制造行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/库存管理可视化大屏-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-WAKPt",
+          "title": "销售管理可视化大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/销售管理可视化大屏.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "制造行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "制造行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/销售管理可视化大屏-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-NGIqw",
+          "title": "公有云资源数据概览",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/公有云资源数据概览.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "平台对接",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "平台对接"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/公有云资源数据概览-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-AVWiA",
+          "title": "采购分析大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/采购分析大屏.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "批发零售",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "批发零售"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/采购分析大屏-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-QGmNS",
+          "title": "电动车增值服务销售分析",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/电动车增值服务销售分析.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "批发零售",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "批发零售"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/增值服务销售分析-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-XgMzE",
+          "title": "中国能源情况分析报告",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/中国能源情况分析报告.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "PANEL",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "能源行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "能源行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/中国能源情况分析报告-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-ynnSg",
+          "title": "2022航空运输情况",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/2022航空运输情况.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "PANEL",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "交通运输",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "交通运输"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/2022%20航空运输情况-TEMPLATE-knsk.DET2"
+          }
+        },
+        {
+          "id": "app-WNMzC",
+          "title": "云数据管理中心",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/云数据管理中心-nqhz.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "平台对接",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "平台对接"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/云数据管理中心-TEMPLATE-qlwc.DET2"
+          }
+        },
+        {
+          "id": "app-CAHJG",
+          "title": "连锁门店2021年销售驾驶舱",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/连锁门店2021年销售驾驶舱-kpis.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "PANEL",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "批发零售",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "批发零售"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/连锁门店2021年销售驾驶舱-TEMPLATE-uaos.DET2"
+          }
+        },
+        {
+          "id": "app-KsuMG",
+          "title": "2021年全国GDP数据",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/2021年全国GDP数据.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "PANEL",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "宣传介绍",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "宣传介绍"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/2021年全国GDP数据-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-nBIpP",
+          "title": "MeterSphere质量大屏(浅色)",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/MeterSphere%20质量大屏(浅色).png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "平台对接",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "平台对接"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/MeterSphere质量大屏(数据大屏)-TEMPLATE-qvlf.DET2"
+          }
+        },
+        {
+          "id": "app-wqWQj",
+          "title": "JumpServer 安全大屏（浅色）",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/JumpServer%20安全大屏(浅色).png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "平台对接",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "平台对接"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/JumpServer%20安全大屏(浅色)-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-gcDmU",
+          "title": "论坛数据大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/论坛数据大屏.png",
+          "showFlag": true,
+          "suggest": "Y",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "平台对接",
+              "slug": null
+            },
+            {
+              "id": null,
+              "name": "推荐",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "平台对接",
+            "推荐"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/论坛数据大屏-TEMPLATE.det2"
+          }
+        },
+        {
+          "id": "app-xzNzH",
+          "title": "JumpServer-运维安全审计大屏-V2",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/运维安全审计大屏.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "平台对接",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "平台对接"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/运维安全审计大屏-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-TLodI",
+          "title": "公有云费用看板",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/公有云费用看板.png",
+          "showFlag": true,
+          "suggest": "Y",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "平台对接",
+              "slug": null
+            },
+            {
+              "id": null,
+              "name": "推荐",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "平台对接",
+            "推荐"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/公有云费用看板-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-JoEzS",
+          "title": "短视频用户分析报告",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/短视频用户分析报告.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "PANEL",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "媒体行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "媒体行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/短视频用户分析报告-TEMPLATE.det2"
+          }
+        },
+        {
+          "id": "app-dzGel",
+          "title": "无线网管理中心",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/无线网管理中心.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "平台对接",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "平台对接"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/无线网管理中心-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-MDGxm",
+          "title": "连锁茶饮销售看板",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/连锁茶饮销售看板.png",
+          "showFlag": true,
+          "suggest": "Y",
+          "recentUseTime": 0,
+          "templateType": "PANEL",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "批发零售",
+              "slug": null
+            },
+            {
+              "id": null,
+              "name": "推荐",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "批发零售",
+            "推荐"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/连锁茶饮销售看板-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-DPqUS",
+          "title": "敦煌旅游云智慧中心",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/敦煌旅游云智慧中心.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "旅游行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "旅游行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/敦煌旅游云智慧中心-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-aIDLz",
+          "title": "某地区柠檬指数大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/某地区柠檬指数.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "农业种植",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "农业种植"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/某地区柠檬指数-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-Ecezy",
+          "title": "全国电力情况概览",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/全国电力情况概览.png",
+          "showFlag": true,
+          "suggest": "Y",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "能源行业",
+              "slug": null
+            },
+            {
+              "id": null,
+              "name": "推荐",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "能源行业",
+            "推荐"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/全国电力情况概览-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-svref",
+          "title": "门诊情况大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/20240220-门诊情况展示大屏.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "医疗行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "医疗行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/20240220-门诊情况展示大屏-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-vyrcA",
+          "title": "2022年国民经济统计数据",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/2022年国民经济统计数据.jpg",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "PANEL",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "金融财务",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "金融财务"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/2022年国民经济统计数据-TEMPLATE%20.DET2"
+          }
+        },
+        {
+          "id": "app-wsBsa",
+          "title": "电力检修智慧云平台",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/电力检修智慧云平台.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "能源行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "能源行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/电力检修智慧云平台-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-zfSZU",
+          "title": "某党支部年度工作总结",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/20240220-某党支部年度工作总结.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "政党事务",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "政党事务"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/20240220-某党支部年度工作总结-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-TazmI",
+          "title": "GitHub 2022年度报告",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/GitHub%202022年度报告.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "开源洞察",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "开源洞察"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/GitHub%202022年度报告-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-THkLc",
+          "title": "某学校招生报到数据看板",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/某学校招生报到数据看板.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "PANEL",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "教育行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "教育行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/某学校招生报到数据看板-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-RbwTm",
+          "title": "某连锁咖啡品牌门店数据看板",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/某连锁咖啡品牌门店数据看板.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "PANEL",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "批发零售",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "批发零售"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/某连锁咖啡品牌门店数据看板-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-vafFP",
+          "title": "某高校门禁管控大数据",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/某高校门禁管控大数据.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "教育行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "教育行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/某高校门禁管控大数据-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-rDPVQ",
+          "title": "科技金融渠道分析",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/科技金融渠道分析.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "PANEL",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "金融财务",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "金融财务"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/科技金融渠道分析-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-hSjDD",
+          "title": "平台媒体数据分析",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/平台媒体数据分析.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "媒体行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "媒体行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/平台媒体数据分析-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-VgYJr",
+          "title": "企业设备监控中心",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/企业设备监控中心.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "制造行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "制造行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/企业设备监控中心-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-QMVeI",
+          "title": "人力资源管理综合分析看板",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/人力资源管理综合分析看板（仪表板）.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "PANEL",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "人资管理",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "人资管理"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/人力资源管理综合分析看板（仪表板）-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-aZgrt",
+          "title": "人力资源管理综合分析看板",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/人力资源管理综合分析看板(大屏).png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "人资管理",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "人资管理"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/人力资源管理综合分析看板(大屏)-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-wIppo",
+          "title": "视频号助手大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/视频号助手大屏.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "媒体行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "媒体行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/视频号助手大屏-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-TPkKg",
+          "title": "中国电影票房数据看板",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/中国电影票房数据看板.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "PANEL",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "媒体行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "媒体行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/中国电影票房数据看板-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-fOAqs",
+          "title": "物业车位管理看板",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/物业车位管理看板.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "PANEL",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "地产行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "地产行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/物业车位管理看板-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-EGDFA",
+          "title": "爱国专题稿件",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/爱国专题稿件.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "政党事务",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "政党事务"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/爱国专题稿件分析看板-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-wYUFB",
+          "title": "公有云费用分析报告",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/公有云费用分析报告.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "PANEL",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "平台对接",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "平台对接"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/公有云费用分析报告-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-WzowX",
+          "title": "智能交通设备检测系统",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/智能交通设备检测系统-uovb.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "交通运输",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "交通运输"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/智能交通设备检测系统-TEMPLATE-zowq.DET2"
+          }
+        },
+        {
+          "id": "app-FRtVq",
+          "title": "执法数据统计情况",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/执法数据统计情况.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "PANEL",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "政党事务",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "政党事务"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/执法数据统计情况-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-mCuSX",
+          "title": "1Panel 数据看板",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/1Panel%20数据看板.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "平台对接",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "平台对接"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/1Panel%20数据看板-TEMPLATE-gqih.DET2"
+          }
+        },
+        {
+          "id": "app-PqTZY",
+          "title": "中国新能源汽车经济运行情况",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/中国新能源汽车经济运行情况.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "能源行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "能源行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/中国新能源汽车经济运行情况-TEMPLATE-jiqx.DET2"
+          }
+        },
+        {
+          "id": "app-PXneu",
+          "title": "工业园区数据监控中心",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/工业园区数据监控中心.jpg",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "制造行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "制造行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/工业园区数据监控中心%20-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-gJbrY",
+          "title": "智慧医疗监护系统",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/智慧医疗监护系统.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "医疗行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "医疗行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/智慧医疗监护系统-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-mDRyY",
+          "title": "连锁店线上运营驾驶舱",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/连锁店线上运营驾驶舱.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "批发零售",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "批发零售"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/连锁店线上运营驾驶舱-TEMPLATE-ylrd.DET2"
+          }
+        },
+        {
+          "id": "app-uTAlV",
+          "title": "连锁饮品销售看板",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/连锁饮品销售看板.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "批发零售",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "批发零售"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/连锁饮品销售看板-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-nEhgl",
+          "title": "医美行业网络关注度",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/医美行业网络关注度.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "医疗行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "医疗行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/医美行业网络关注度-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-YwjBg",
+          "title": "某制造业呆滞库存看板",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/某制造业呆滞库存看板.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "制造行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "制造行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/某制造业呆滞库存看板-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-TJBNS",
+          "title": "某医院门诊收入",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/某医院门诊收入-yurp.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "医疗行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "医疗行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/某医院门诊收入-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-TTUOG",
+          "title": "一卡通综合数据大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/一卡通综合数据大屏.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "金融财务",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "金融财务"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/一卡通综合数据大屏-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-UALGM",
+          "title": "某连锁店外卖销售看板",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/某连锁店外卖销售看板.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "批发零售",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "批发零售"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/某连锁店外卖销售看板-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-UMAsV",
+          "title": "业务生产看板",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/业务生产看板.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "制造行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "制造行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/业务生产看板-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-EATMI",
+          "title": "跨境电商数据大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/跨境电商数据大屏.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "电子商务",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "电子商务"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/跨境电商数据大屏-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-JGovL",
+          "title": "某机构招生看板",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/某机构招生看板.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "教育行业",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "教育行业"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/某某机构招生看板-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-GWdCr",
+          "title": "电子银行业务概览",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/电子银行业务.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "金融财务",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "金融财务"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/电子银行业务-TEMPLATE.DET2"
+          }
+        },
+        {
+          "id": "app-VrLJk",
+          "title": "航空公司运行监测看板",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/航空公司运行监测看板.jpg",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "交通运输",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "交通运输"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/_航空公司运行监测看板-TEMPLATE-vldz.DET2"
+          }
+        },
+        {
+          "id": "app-lBSUH",
+          "title": "某省高速公路分析大屏",
+          "status": null,
+          "slug": null,
+          "editorType": null,
+          "summary": null,
+          "thumbnail": "/upload/某省高速公路大屏.png",
+          "showFlag": true,
+          "suggest": "N",
+          "recentUseTime": 0,
+          "templateType": "SCREEN",
+          "source": "market",
+          "classify": "template",
+          "categories": [
+            {
+              "id": null,
+              "name": "交通运输",
+              "slug": null
+            }
+          ],
+          "categoryNames": [
+            "交通运输"
+          ],
+          "mainCategory": null,
+          "metas": {
+            "theme_repo": "/upload/高速公路大屏-TEMPLATE.DET2"
+          }
+        }
+      ]
+    }
+  },
+  "list_shares": {
+    "status": "PASS",
+    "result": [
+      {
+        "shareId": "1258819123551539200",
+        "resourceId": "1257692258241744896",
+        "name": "物料报废与不良-alpha-v1.0",
+        "creator": "系统管理员",
+        "time": 1780292332414,
+        "exp": null,
+        "weight": 9,
+        "extFlag": 0,
+        "extFlag1": 1,
+        "type": "dashboard"
+      },
+      {
+        "shareId": "1237450608533966848",
+        "resourceId": "1237445653022511104",
+        "name": "物料利用率-看板-alpha-v1.2",
+        "creator": "系统管理员",
+        "time": 1775197681426,
+        "exp": null,
+        "weight": 9,
+        "extFlag": 0,
+        "extFlag1": 1,
+        "type": "dashboard"
+      },
+      {
+        "shareId": "1232338925931073536",
+        "resourceId": "1232076416984682496",
+        "name": "物料利用率-看板-release-v1.1",
+        "creator": "系统管理员",
+        "time": 1773978961323,
+        "exp": null,
+        "weight": 9,
+        "extFlag": 0,
+        "extFlag1": 2,
+        "type": "dashboard"
+      },
+      {
+        "shareId": "1231953437084749824",
+        "resourceId": "1231692208034418688",
+        "name": "物料利用率-看板-beta-v1.0",
+        "creator": "系统管理员",
+        "time": 1773887053620,
+        "exp": null,
+        "weight": 9,
+        "extFlag": 0,
+        "extFlag1": 1,
+        "type": "dashboard"
+      },
+      {
+        "shareId": "1216356777415806976",
+        "resourceId": "1214671555783692288",
+        "name": "产出-良率看板",
+        "creator": "系统管理员",
+        "time": 1770168520183,
+        "exp": null,
+        "weight": 9,
+        "extFlag": 0,
+        "extFlag1": 1,
+        "type": "dashboard"
+      }
+    ]
+  }
+}

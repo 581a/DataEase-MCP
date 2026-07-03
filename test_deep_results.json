@@ -1,0 +1,487 @@
+{
+  "list_datasources": {
+    "status": "PASS",
+    "result": [
+      {
+        "id": "0",
+        "name": "root",
+        "leaf": false,
+        "weight": 7,
+        "extraFlag": 0,
+        "extraFlag1": 0,
+        "type": "mysql",
+        "children": [
+          {
+            "id": "1257372248600350720",
+            "name": "不良报废数据源",
+            "leaf": false,
+            "weight": 9,
+            "extraFlag": 25,
+            "extraFlag1": 0,
+            "type": "folder",
+            "children": [
+              {
+                "id": "1259150604970889216",
+                "name": "df25_批次报废还原报表",
+                "leaf": true,
+                "weight": 9,
+                "extraFlag": 15,
+                "extraFlag1": 0,
+                "type": "API",
+                "children": null,
+                "ext": null
+              },
+              {
+                "id": "1259149073064267776",
+                "name": "df24_报废材料明细报表",
+                "leaf": true,
+                "weight": 9,
+                "extraFlag": 15,
+                "extraFlag1": 0,
+                "type": "API",
+                "children": null,
+                "ext": null
+              },
+              {
+                "id": "1259147967231823872",
+                "name": "df21_批次工单数据报表",
+                "leaf": true,
+                "weight": 9,
+                "extraFlag": 15,
+                "extraFlag1": 0,
+                "type": "API",
+                "children": null,
+                "ext": null
+              },
+              {
+                "id": "1259139888108933120",
+                "name": "df23_不良聚合报表",
+                "leaf": true,
+                "weight": 9,
+                "extraFlag": 15,
+                "extraFlag1": 0,
+                "type": "API",
+                "children": null,
+                "ext": null
+              },
+              {
+                "id": "1257380933938581504",
+                "name": "Excel_Test",
+                "leaf": false,
+                "weight": 9,
+                "extraFlag": 25,
+                "extraFlag1": 0,
+                "type": "folder",
+                "children": [
+                  {
+                    "id": "1257386369345523712",
+                    "name": "df25_批次报废还原报表",
+                    "leaf": true,
+                    "weight": 9,
+                    "extraFlag": 16,
+                    "extraFlag1": 0,
+                    "type": "Excel",
+                    "children": null,
+                    "ext": null
+                  },
+                  {
+                    "id": "1257386217620770816",
+                    "name": "df24_报废材料明细",
+                    "leaf": true,
+                    "weight": 9,
+                    "extraFlag": 16,
+                    "extraFlag1": 0,
+                    "type": "Excel",
+                    "children": null,
+                    "ext": null
+                  },
+                  {
+                    "id": "1257386103992881152",
+                    "name": "df23_不良聚合报表",
+                    "leaf": true,
+                    "weight": 9,
+                    "extraFlag": 16,
+                    "extraFlag1": 0,
+                    "type": "Excel",
+                    "children": null,
+                    "ext": null
+                  },
+                  {
+                    "id": "1257385986590117888",
+                    "name": "df22_报废数据明细",
+                    "leaf": true,
+                    "weight": 9,
+                    "extraFlag": 16,
+                    "extraFlag1": 0,
+                    "type": "Excel",
+                    "children": null,
+                    "ext": null
+                  }
+                ],
+                "ext": null
+              }
+            ],
+            "ext": null
+          },
+          {
+            "id": "1232396372540526592",
+            "name": "MUR_API",
+            "leaf": true,
+            "weight": 9,
+            "extraFlag": 15,
+            "extraFlag1": 0,
+            "type": "API",
+            "children": null,
+            "ext": null
+          },
+          {
+            "id": "1231688767446847488",
+            "name": "物料利用率查询结果_20260318_164947",
+            "leaf": true,
+            "weight": 9,
+            "extraFlag": 16,
+            "extraFlag1": 0,
+            "type": "Excel",
+            "children": null,
+            "ext": null
+          },
+          {
+            "id": "1216000094999023616",
+            "name": "批次维度API",
+            "leaf": true,
+            "weight": 9,
+            "extraFlag": 15,
+            "extraFlag1": 0,
+            "type": "API",
+            "children": null,
+            "ext": null
+          },
+          {
+            "id": "1215779398364565504",
+            "name": "时间维度API",
+            "leaf": true,
+            "weight": 9,
+            "extraFlag": 15,
+            "extraFlag1": 0,
+            "type": "API",
+            "children": null,
+            "ext": null
+          },
+          {
+            "id": "1214896022690598912",
+            "name": "时间维度",
+            "leaf": true,
+            "weight": 9,
+            "extraFlag": 16,
+            "extraFlag1": 0,
+            "type": "Excel",
+            "children": null,
+            "ext": null
+          },
+          {
+            "id": "1214667507114315776",
+            "name": "批次维度",
+            "leaf": true,
+            "weight": 9,
+            "extraFlag": 16,
+            "extraFlag1": 0,
+            "type": "Excel",
+            "children": null,
+            "ext": null
+          },
+          {
+            "id": "985188400292302848",
+            "name": "Demo",
+            "leaf": true,
+            "weight": 9,
+            "extraFlag": 27,
+            "extraFlag1": 0,
+            "type": "mysql",
+            "children": null,
+            "ext": null
+          }
+        ],
+        "ext": null
+      }
+    ]
+  },
+  "list_datasets": {
+    "status": "PASS",
+    "result": [
+      {
+        "id": "0",
+        "name": "root",
+        "leaf": false,
+        "weight": 7,
+        "extraFlag": 0,
+        "extraFlag1": 0,
+        "type": null,
+        "children": [
+          {
+            "id": "1270357746730012672",
+            "name": "MCP_TEST",
+            "leaf": false,
+            "weight": 9,
+            "extraFlag": 0,
+            "extraFlag1": 0,
+            "type": null,
+            "children": null,
+            "ext": null
+          },
+          {
+            "id": "1259160149965279232",
+            "name": "test_24",
+            "leaf": true,
+            "weight": 9,
+            "extraFlag": 0,
+            "extraFlag1": 0,
+            "type": null,
+            "children": null,
+            "ext": null
+          },
+          {
+            "id": "1259143095543533568",
+            "name": "test",
+            "leaf": true,
+            "weight": 9,
+            "extraFlag": 0,
+            "extraFlag1": 0,
+            "type": null,
+            "children": null,
+            "ext": null
+          },
+          {
+            "id": "1257377080476307456",
+            "name": "报废率数据集",
+            "leaf": false,
+            "weight": 9,
+            "extraFlag": 0,
+            "extraFlag1": 0,
+            "type": null,
+            "children": [
+              {
+                "id": "1258615372966400000",
+                "name": "过滤维度数据集",
+                "leaf": true,
+                "weight": 9,
+                "extraFlag": 0,
+                "extraFlag1": 0,
+                "type": null,
+                "children": null,
+                "ext": null
+              },
+              {
+                "id": "1257875783783944192",
+                "name": "批次不良原因工序",
+                "leaf": true,
+                "weight": 9,
+                "extraFlag": 0,
+                "extraFlag1": 0,
+                "type": null,
+                "children": null,
+                "ext": null
+              },
+              {
+                "id": "1257777977563942912",
+                "name": "批次总不良",
+                "leaf": true,
+                "weight": 9,
+                "extraFlag": 0,
+                "extraFlag1": 0,
+                "type": null,
+                "children": null,
+                "ext": null
+              },
+              {
+                "id": "1257387824144060416",
+                "name": "批次材料不良及占比",
+                "leaf": true,
+                "weight": 9,
+                "extraFlag": 0,
+                "extraFlag1": 0,
+                "type": null,
+                "children": null,
+                "ext": null
+              },
+              {
+                "id": "1257382542617743360",
+                "name": "TEST",
+                "leaf": false,
+                "weight": 9,
+                "extraFlag": 0,
+                "extraFlag1": 0,
+                "type": null,
+                "children": null,
+                "ext": null
+              }
+            ],
+            "ext": null
+          },
+          {
+            "id": "1231720097408749568",
+            "name": "物料利用率数据集",
+            "leaf": false,
+            "weight": 9,
+            "extraFlag": 0,
+            "extraFlag1": 0,
+            "type": null,
+            "children": [
+              {
+                "id": "1231724967830360064",
+                "name": "物料利用率_L2_批次级",
+                "leaf": true,
+                "weight": 9,
+                "extraFlag": 0,
+                "extraFlag1": 0,
+                "type": null,
+                "children": null,
+                "ext": null
+              },
+              {
+                "id": "1231690692774989824",
+                "name": "物料利用率_L3_材料级",
+                "leaf": true,
+                "weight": 9,
+                "extraFlag": 0,
+                "extraFlag1": 0,
+                "type": null,
+                "children": null,
+                "ext": null
+              }
+            ],
+            "ext": null
+          },
+          {
+            "id": "1231686134854193152",
+            "name": "良率看板数据集",
+            "leaf": false,
+            "weight": 9,
+            "extraFlag": 0,
+            "extraFlag1": 0,
+            "type": null,
+            "children": [
+              {
+                "id": "1214916213772259328",
+                "name": "时间维度",
+                "leaf": true,
+                "weight": 9,
+                "extraFlag": 0,
+                "extraFlag1": 0,
+                "type": null,
+                "children": null,
+                "ext": null
+              },
+              {
+                "id": "1214669589594640384",
+                "name": "批次维度",
+                "leaf": true,
+                "weight": 9,
+                "extraFlag": 0,
+                "extraFlag1": 0,
+                "type": null,
+                "children": null,
+                "ext": null
+              }
+            ],
+            "ext": null
+          },
+          {
+            "id": "1216729841177595904",
+            "name": "时间维度-test",
+            "leaf": true,
+            "weight": 9,
+            "extraFlag": 0,
+            "extraFlag1": 0,
+            "type": null,
+            "children": null,
+            "ext": null
+          },
+          {
+            "id": "1215997941483966464",
+            "name": "api",
+            "leaf": false,
+            "weight": 9,
+            "extraFlag": 0,
+            "extraFlag1": 0,
+            "type": null,
+            "children": [
+              {
+                "id": "1232397144737058816",
+                "name": "MUR_API",
+                "leaf": true,
+                "weight": 9,
+                "extraFlag": 0,
+                "extraFlag1": 0,
+                "type": null,
+                "children": null,
+                "ext": null
+              },
+              {
+                "id": "1216000489599143936",
+                "name": "批次维度",
+                "leaf": true,
+                "weight": 9,
+                "extraFlag": 0,
+                "extraFlag1": 0,
+                "type": null,
+                "children": null,
+                "ext": null
+              },
+              {
+                "id": "1215998131657904128",
+                "name": "时间维度",
+                "leaf": true,
+                "weight": 9,
+                "extraFlag": 0,
+                "extraFlag1": 0,
+                "type": null,
+                "children": null,
+                "ext": null
+              }
+            ],
+            "ext": null
+          },
+          {
+            "id": "985189269226262528",
+            "name": "【官方示例】",
+            "leaf": false,
+            "weight": 9,
+            "extraFlag": 0,
+            "extraFlag1": 0,
+            "type": null,
+            "children": [
+              {
+                "id": "985189703189925888",
+                "name": "茶饮原料费用",
+                "leaf": true,
+                "weight": 9,
+                "extraFlag": 0,
+                "extraFlag1": 0,
+                "type": null,
+                "children": null,
+                "ext": null
+              },
+              {
+                "id": "985189053949415424",
+                "name": "茶饮订单明细",
+                "leaf": true,
+                "weight": 9,
+                "extraFlag": 0,
+                "extraFlag1": 0,
+                "type": null,
+                "children": null,
+                "ext": null
+              }
+            ],
+            "ext": null
+          }
+        ],
+        "ext": null
+      }
+    ]
+  },
+  "list_dashboards_all": {
+    "status": "PASS",
+    "result": null
+  }
+}
