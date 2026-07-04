@@ -11,6 +11,7 @@ class Config:
     PASSWORD: str = os.getenv("DE_PASSWORD", "123456!a@Reliance")
     TOKEN_KEY: str = "X-DE-TOKEN"
     REQUEST_TIMEOUT: float = float(os.getenv("DE_REQUEST_TIMEOUT", "60.0"))
+    DE_VERSION: str = os.getenv("DE_VERSION", "2.10.18")
 
     @property
     def api_url(self) -> str:

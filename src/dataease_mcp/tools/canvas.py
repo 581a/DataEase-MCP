@@ -1,5 +1,8 @@
 import json as _json
+import uuid as _uuid
+
 from ..client import de_client
+from ..config import config as _de_config
 from ..utils import generate_view_id
 
 _FILTER_BASE_TEMPLATE = {
@@ -86,6 +89,11 @@ _USER_VIEW_STYLE = {
     "borderRadius": 5,
     "borderStyle": "solid",
     "borderColor": "rgba(204, 204, 204, 1)",
+    "adaptation": "adaptation",
+    "width": 504,
+    "height": 274,
+    "left": 0,
+    "top": 0,
 }
 
 _USER_VIEW_BACKGROUND = {
@@ -93,7 +101,13 @@ _USER_VIEW_BACKGROUND = {
     "backdropFilterEnable": False,
     "backgroundImageEnable": False,
     "backgroundType": "innerImage",
-    "innerImage": "board/board_1280_720.png",
+    "innerImage": "board/board_1.svg",
+    "outerImage": None,
+    "innerPadding": {"mode": "uniform", "top": 12},
+    "borderRadius": {"mode": "uniform", "topLeft": 0},
+    "backdropFilter": 4,
+    "backgroundColor": "rgba(255,255,255,1)",
+    "innerImageColor": "rgba(16, 148, 229,1)",
 }
 
 _USER_VIEW_COLLAPSE_NAMES = [
@@ -109,7 +123,19 @@ _USER_VIEW_EVENTS = {
     "typeList": [
         {"key": "jump", "label": "jump"},
         {"key": "download", "label": "download"},
+        {"key": "share", "label": "share"},
+        {"key": "fullScreen", "label": "fullScreen"},
+        {"key": "showHidden", "label": "showHidden"},
+        {"key": "refreshDataV", "label": "refreshDataV"},
+        {"key": "refreshView", "label": "refreshView"},
     ],
+    "jump": {"value": "https://", "type": "_blank"},
+    "download": {"value": True},
+    "share": {"value": True},
+    "fullScreen": {"value": True},
+    "showHidden": {"value": True},
+    "refreshDataV": {"value": True},
+    "refreshView": {"value": True, "target": "all"},
 }
 
 _USER_VIEW_CAROUSEL = {"enable": False, "time": 10}
@@ -150,6 +176,24 @@ _FILTER_WRAPPER_TEMPLATE = {
     "show": True,
     "expand": False,
     "resizeInnerKeep": False,
+    "style": {
+        "rotate": 0,
+        "opacity": 1,
+        "borderActive": False,
+        "borderWidth": 1,
+        "borderRadius": 5,
+        "borderStyle": "solid",
+        "borderColor": "rgba(204, 204, 204, 1)",
+        "adaptation": "adaptation",
+    },
+    "commonBackground": {
+        "backgroundColorSelect": True,
+        "backdropFilterEnable": False,
+        "backgroundImageEnable": False,
+        "backgroundType": "innerImage",
+        "innerImage": "board/board_1.svg",
+        "outerImage": None,
+    },
 }
 
 
@@ -191,17 +235,25 @@ async def _save_dashboard_canvas(
                     cid_int = int(cid)
                     cd = await chart_tools.get_chart_detail(cid_int, "snapshot")
                     if cd:
+                        table_id = cd.get("tableId")
+                        if table_id is not None:
+                            table_id = str(table_id)
+                        cvi_y_axis_ext = cd.get("yAxisExt", []) or []
+                        if not cvi_y_axis_ext:
+                            cvi_y_axis_ext = cd.get("senior", {}).get("_mcp_yAxisExt") or []
+                        cvi_y_axis_ext = [f for f in cvi_y_axis_ext if f.get("extField") != 2]
                         canvas_view_info[cid] = {
-                            "id": cid_int,
+                            "id": cid,
+                            "name": cd.get("title", comp.get("name", str(cid))),
                             "title": cd.get("title", comp.get("name", str(cid))),
                             "sceneId": dv_id,
-                            "tableId": cd.get("tableId"),
+                            "tableId": table_id,
                             "type": cd.get("type", comp.get("innerType", "table-info")),
                             "render": cd.get("render", "antv"),
                             "xAxis": cd.get("xAxis", []),
                             "yAxis": cd.get("yAxis", []),
                             "xAxisExt": cd.get("xAxisExt", []),
-                            "yAxisExt": cd.get("yAxisExt", []),
+                            "yAxisExt": cvi_y_axis_ext,
                             "extStack": cd.get("extStack", []),
                             "extBubble": cd.get("extBubble", []),
                             "extLabel": cd.get("extLabel", []),
@@ -225,22 +277,62 @@ async def _save_dashboard_canvas(
                         }
                     else:
                         canvas_view_info[cid] = {
-                            "id": cid_int,
+                            "id": cid,
+                            "name": comp.get("name", str(cid)),
                             "title": comp.get("name", str(cid)),
                             "sceneId": dv_id,
+                            "tableId": "",
                             "type": comp.get("innerType", "table-info"),
+                            "render": "antv",
+                            "xAxis": [], "yAxis": [],
+                            "xAxisExt": [], "yAxisExt": [],
+                            "extStack": [], "extBubble": [],
+                            "extLabel": [], "extTooltip": [], "extColor": [],
+                            "drillFields": [],
+                            "customAttr": {}, "customAttrMobile": {},
+                            "customStyle": {}, "customStyleMobile": {},
+                            "senior": {},
+                            "stylePriority": "view",
+                            "isPlugin": False,
+                            "refreshViewEnable": False,
+                            "linkageActive": False, "jumpActive": False,
+                            "aggregate": False,
+                            "dataFrom": "dataset",
+                            "resultMode": "custom",
+                            "resultCount": 1000,
                         }
-                except (ValueError, TypeError):
+                except (ValueError, TypeError, RuntimeError):
                     canvas_view_info[cid] = {
                         "id": cid,
+                        "name": comp.get("name", str(cid)),
                         "title": comp.get("name", str(cid)),
                         "sceneId": dv_id,
+                        "tableId": "",
                         "type": comp.get("innerType", "table-info"),
+                        "render": "antv",
+                        "xAxis": [], "yAxis": [],
+                        "xAxisExt": [], "yAxisExt": [],
+                        "extStack": [], "extBubble": [],
+                        "extLabel": [], "extTooltip": [], "extColor": [],
+                        "drillFields": [],
+                        "customAttr": {}, "customAttrMobile": {},
+                        "customStyle": {}, "customStyleMobile": {},
+                        "senior": {},
+                        "stylePriority": "view",
+                        "isPlugin": False,
+                        "refreshViewEnable": False,
+                        "linkageActive": False, "jumpActive": False,
+                        "aggregate": False,
+                        "dataFrom": "dataset",
+                        "resultMode": "custom",
+                        "resultCount": 1000,
                     }
 
     for cvi in canvas_view_info.values():
         for axis_key in ("xAxis", "yAxis", "xAxisExt", "yAxisExt"):
-            for field in cvi.get(axis_key, []) or []:
+            axis_fields = cvi.get(axis_key, []) or []
+            filtered = []
+            for field in axis_fields:
                 if isinstance(field, dict):
                     if field.get("extField") is None:
                         field["extField"] = 0
@@ -250,21 +342,43 @@ async def _save_dashboard_canvas(
                         field["dataeaseName"] = field.get("name", "")
                     if field.get("deType") is None:
                         field["deType"] = 0
+                    if field.get("extField") != 2:
+                        filtered.append(field)
+            cvi[axis_key] = filtered
+
+    check_version = str(detail.get("checkVersion", ""))
+    if check_version in ("", "1"):
+        check_version = _de_config.DE_VERSION
+    content_id = detail.get("contentId")
+    if content_id in ("0", "", None, 0):
+        content_id = str(_uuid.uuid4())
+    canvas_style = detail.get("canvasStyleData") or "{}"
+    if isinstance(canvas_style, dict):
+        canvas_style = _json.dumps(canvas_style, ensure_ascii=False)
+
+    comp_data_str = _json.dumps(
+        component_data, separators=(",", ":"), ensure_ascii=False
+    )
+
+    detail["componentData"] = comp_data_str
+    detail["canvasViewInfo"] = canvas_view_info
 
     body = {
         "id": detail.get("id", dv_id),
-        "pid": detail.get("pid", 0),
         "name": detail.get("name", ""),
+        "pid": detail.get("pid", 0),
         "nodeType": detail.get("nodeType", "leaf"),
         "type": detail.get("type", "dashboard"),
-        "busiFlag": "dashboard",
-        "status": detail.get("status", 1),
-        "selfWatermarkStatus": detail.get("selfWatermarkStatus", False),
-        "mobileLayout": detail.get("mobileLayout", False),
-        "contentId": detail.get("contentId") or "",
-        "componentData": _json.dumps(component_data, separators=(",", ":"), ensure_ascii=False),
-        "canvasStyleData": detail.get("canvasStyleData") or "{}",
+        "busiFlag": detail.get("busiFlag", detail.get("type", "dashboard")),
+        "canvasStyleData": canvas_style,
+        "componentData": comp_data_str,
         "canvasViewInfo": canvas_view_info,
+        "mobileLayout": detail.get("mobileLayout", False),
+        "selfWatermarkStatus": detail.get("selfWatermarkStatus", False),
+        "checkVersion": check_version,
+        "watermarkInfo": detail.get("watermarkInfo"),
+        "status": detail.get("status", 0),
+        "contentId": content_id,
     }
     resp = await de_client.post("/dataVisualization/updateCanvas", body)
     return resp
@@ -355,7 +469,7 @@ async def add_chart_to_canvas(
     size_x: int = 36,
     size_y: int = 25,
 ) -> dict:
-    from ..utils import CHART_TYPE_LIST
+    from ..utils import CHART_TYPE_LIST, _CHART_TYPE_DESCRIPTIONS
 
     detail = await _load_dashboard_canvas(dv_id)
     if not detail:
@@ -364,11 +478,7 @@ async def add_chart_to_canvas(
     components = _parse_component_data(detail)
 
     cid_str = str(chart_id)
-    chart_types = {}
-    for entry in CHART_TYPE_LIST:
-        if isinstance(entry, (tuple, list)) and len(entry) >= 2:
-            chart_types[entry[0]] = entry[1]
-    chart_name = chart_types.get(chart_type, chart_type)
+    chart_name = _CHART_TYPE_DESCRIPTIONS.get(chart_type, chart_type)
 
     icon_map = {
         "bar": "bar", "line": "line", "pie": "pie",
@@ -398,7 +508,7 @@ async def add_chart_to_canvas(
         "component": "UserView",
         "name": chart_title or cid_str,
         "label": chart_name,
-        "propValue": {},
+        "propValue": {"textValue": "", "urlList": []},
         "icon": icon_map.get(chart_type, "bar"),
         "innerType": chart_type,
         "editing": False,
@@ -498,7 +608,7 @@ async def add_filter_component(
     parameters_arr = {cid: [] for cid in chart_id_list}
 
     allow_multiple = filter_type in ("multiple", "checkbox")
-    display_type = "0"
+    display_type = 0
 
     import copy
     filter_item = copy.deepcopy(_FILTER_BASE_TEMPLATE)

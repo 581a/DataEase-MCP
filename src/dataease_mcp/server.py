@@ -835,6 +835,12 @@ TOOLS = [
                     "items": {"type": "object"},
                     "description": "指标（纵轴/数值）字段列表。每个字段需包含: id, name, dataeaseName, groupType(必须为\"q\"), deType。可选: summary(sum/count/avg/max/min), sort, filter",
                 },
+                "y_fields_ext": {
+                    "type": "array",
+                    "items": {"type": "object"},
+                    "description": "【组合图专用】右值轴指标字段列表。仅 chart-mix 类型使用。格式同 y_fields",
+                    "default": [],
+                },
                 "chart_id": {
                     "type": ["integer", "string"],
                     "description": "图表 ID（更新时使用）。不填则自动生成新的图表 ID",
@@ -1210,6 +1216,7 @@ TOOL_HANDLERS = {
         chart_type=args["chart_type"],
         x_fields=args["x_fields"],
         y_fields=args["y_fields"],
+        y_fields_ext=args.get("y_fields_ext", None),
         chart_id=args.get("chart_id", 0),
         result_count=args.get("result_count", 1000),
     ),

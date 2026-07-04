@@ -22,25 +22,40 @@ def _field_defaults(fields: list[dict], chart_type: str, group_type: str) -> Non
 async def get_chart_detail(chart_id: int, resource_table: str = "snapshot") -> dict:
     try:
         resp = await de_client.post(f"/chart/getDetail/{chart_id}/{resource_table}")
-    except RuntimeError:
+    except (RuntimeError, Exception) as e:
         if resource_table != "core":
-            resp = await de_client.post(f"/chart/getDetail/{chart_id}/core")
+            try:
+                resp = await de_client.post(f"/chart/getDetail/{chart_id}/core")
+            except (RuntimeError, Exception) as e2:
+                raise RuntimeError(f"Chart {chart_id} not found in snapshot or core: {e2}") from e2
         else:
-            raise
+            raise RuntimeError(f"Chart {chart_id} not found in core: {e}") from e
     return resp
 
 
 async def get_chart_data(chart_id: int) -> dict:
-    resp = await de_client.post(
-        "/chartData/getData",
-        {
-            "id": chart_id,
-            "resourceTable": "core",
-            "resultMode": "custom",
-            "resultCount": 1000,
-        },
-    )
-    return resp
+    try:
+        resp = await de_client.post(
+            "/chartData/getData",
+            {
+                "id": chart_id,
+                "resourceTable": "snapshot",
+                "resultMode": "custom",
+                "resultCount": 1000,
+            },
+        )
+        return resp
+    except RuntimeError:
+        resp = await de_client.post(
+            "/chartData/getData",
+            {
+                "id": chart_id,
+                "resourceTable": "core",
+                "resultMode": "custom",
+                "resultCount": 1000,
+            },
+        )
+        return resp
 
 
 async def get_dashboard_views(dashboard_id: int) -> list:
@@ -77,6 +92,7 @@ async def save_chart(
     chart_type: str,
     x_fields: list[dict],
     y_fields: list[dict],
+    y_fields_ext: list[dict] | None = None,
     chart_id: int = 0,
     result_count: int = 1000,
     custom_attr: dict | None = None,
@@ -86,6 +102,85 @@ async def save_chart(
 
     _field_defaults(x_fields, chart_type, "d")
     _field_defaults(y_fields, chart_type, "q")
+    if y_fields_ext:
+        _field_defaults(y_fields_ext, chart_type, "q")
+
+    # 合并 x_fields 和 y_fields 作为 viewFields
+    view_fields = []
+    for f in x_fields:
+        vf = {
+            "id": f["id"],
+            "name": f.get("name", ""),
+            "dataeaseName": f.get("dataeaseName", ""),
+            "groupType": f.get("groupType", "d"),
+            "deType": f.get("deType", 0),
+            "extField": f.get("extField", 0),
+            "originName": f.get("originName", f.get("name", "")),
+            "checked": True,
+            "summary": "",
+            "sort": "none",
+            "filter": [],
+            "dateStyle": "",
+            "datePattern": "",
+            "dateShowFormat": "",
+            "chartType": chart_type,
+            "compareCalc": {"type": "none"},
+            "formatterCfg": {"type": "auto", "unitLanguage": "ch"},
+            "index": None,
+            "logic": None,
+            "filterType": None,
+        }
+        view_fields.append(vf)
+    for f in y_fields:
+        vf = {
+            "id": f["id"],
+            "name": f.get("name", ""),
+            "dataeaseName": f.get("dataeaseName", ""),
+            "groupType": f.get("groupType", "q"),
+            "deType": f.get("deType", 0),
+            "extField": f.get("extField", 0),
+            "originName": f.get("originName", f.get("name", "")),
+            "checked": True,
+            "summary": f.get("summary", "sum"),
+            "sort": "none",
+            "filter": [],
+            "dateStyle": "y_M_d",
+            "datePattern": "date_sub",
+            "dateShowFormat": "y_M_d",
+            "chartType": chart_type,
+            "compareCalc": {"type": "none"},
+            "formatterCfg": {"type": "auto", "unitLanguage": "ch"},
+            "index": None,
+            "logic": None,
+            "filterType": None,
+        }
+        view_fields.append(vf)
+
+    if y_fields_ext:
+        for f in y_fields_ext:
+            vf = {
+                "id": f["id"],
+                "name": f.get("name", ""),
+                "dataeaseName": f.get("dataeaseName", ""),
+                "groupType": f.get("groupType", "q"),
+                "deType": f.get("deType", 0),
+                "extField": f.get("extField", 0),
+                "originName": f.get("originName", f.get("name", "")),
+                "checked": True,
+                "summary": f.get("summary", "sum"),
+                "sort": "none",
+                "filter": [],
+                "dateStyle": "y_M_d",
+                "datePattern": "date_sub",
+                "dateShowFormat": "y_M_d",
+                "chartType": chart_type,
+                "compareCalc": {"type": "none"},
+                "formatterCfg": {"type": "auto", "unitLanguage": "ch"},
+                "index": None,
+                "logic": None,
+                "filterType": None,
+            }
+            view_fields.append(vf)
 
     body = {
         "id": chart_id,
@@ -101,21 +196,21 @@ async def save_chart(
         "xAxis": x_fields,
         "yAxis": y_fields,
         "xAxisExt": [],
-        "yAxisExt": [],
+        "yAxisExt": y_fields_ext if y_fields_ext else [],
         "extStack": [],
         "extBubble": [],
         "extLabel": [],
         "extTooltip": [],
         "extColor": [],
         "drillFields": [],
-        "viewFields": [],
+        "viewFields": view_fields,
         "flowMapStartName": [],
         "flowMapEndName": [],
         "customAttr": custom_attr if custom_attr else {},
         "customAttrMobile": {},
         "customStyle": {},
         "customStyleMobile": {},
-        "senior": {},
+        "senior": {"_mcp_yAxisExt": y_fields_ext} if y_fields_ext else {},
         "stylePriority": "view",
         "isPlugin": False,
         "refreshViewEnable": False,
@@ -125,6 +220,8 @@ async def save_chart(
     }
 
     resp = await de_client.post("/chart/save", body)
+    if isinstance(resp, dict) and "id" in resp:
+        resp["id"] = str(resp["id"])
     return resp
 
 
@@ -156,6 +253,40 @@ async def update_chart(
     _field_defaults(x_fields, chart_type, "d")
     _field_defaults(y_fields, chart_type, "q")
 
+    # 合并 x_fields 和 y_fields 作为 viewFields
+    view_fields = []
+    for f in x_fields:
+        vf = {
+            "id": f["id"], "name": f.get("name", ""),
+            "dataeaseName": f.get("dataeaseName", ""),
+            "groupType": f.get("groupType", "d"),
+            "deType": f.get("deType", 0), "extField": f.get("extField", 0),
+            "originName": f.get("originName", f.get("name", "")),
+            "checked": True, "summary": "", "sort": "none", "filter": [],
+            "dateStyle": "", "datePattern": "", "dateShowFormat": "",
+            "chartType": chart_type,
+            "compareCalc": {"type": "none"},
+            "formatterCfg": {"type": "auto", "unitLanguage": "ch"},
+            "index": None, "logic": None, "filterType": None,
+        }
+        view_fields.append(vf)
+    for f in y_fields:
+        vf = {
+            "id": f["id"], "name": f.get("name", ""),
+            "dataeaseName": f.get("dataeaseName", ""),
+            "groupType": f.get("groupType", "q"),
+            "deType": f.get("deType", 0), "extField": f.get("extField", 0),
+            "originName": f.get("originName", f.get("name", "")),
+            "checked": True, "summary": f.get("summary", "sum"),
+            "sort": "none", "filter": [],
+            "dateStyle": "y_M_d", "datePattern": "date_sub", "dateShowFormat": "y_M_d",
+            "chartType": chart_type,
+            "compareCalc": {"type": "none"},
+            "formatterCfg": {"type": "auto", "unitLanguage": "ch"},
+            "index": None, "logic": None, "filterType": None,
+        }
+        view_fields.append(vf)
+
     body = {
         "id": int(chart_id),
         "title": title,
@@ -177,7 +308,7 @@ async def update_chart(
         "extTooltip": existing.get("extTooltip", []),
         "extColor": existing.get("extColor", []),
         "drillFields": existing.get("drillFields", []),
-        "viewFields": existing.get("viewFields", []),
+        "viewFields": view_fields,
         "flowMapStartName": existing.get("flowMapStartName", []),
         "flowMapEndName": existing.get("flowMapEndName", []),
         "customAttr": custom_attr if custom_attr else existing.get("customAttr", {}),
@@ -194,4 +325,6 @@ async def update_chart(
     }
 
     resp = await de_client.post("/chart/save", body)
+    if isinstance(resp, dict) and "id" in resp:
+        resp["id"] = str(resp["id"])
     return resp
