@@ -20,14 +20,23 @@ class DEClient:
         token = await auth_manager.ensure_auth(client)
         return {config.TOKEN_KEY: token}
 
-    async def get(self, path: str, **kwargs) -> Any:
+    async def _request(self, method: str, path: str, **kwargs) -> Any:
         client = await self._get_client()
         headers = await self._headers()
-        resp = await client.get(
-            f"{config.api_url}{path}", headers=headers, **kwargs
+        resp = await client.request(
+            method, f"{config.api_url}{path}", headers=headers, **kwargs
         )
+        if resp.status_code == 401:
+            auth_manager.invalidate()
+            headers = await self._headers()
+            resp = await client.request(
+                method, f"{config.api_url}{path}", headers=headers, **kwargs
+            )
         resp.raise_for_status()
         return self._parse_response(resp)
+
+    async def get(self, path: str, **kwargs) -> Any:
+        return await self._request("GET", path, **kwargs)
 
     async def post(
         self,
@@ -35,16 +44,7 @@ class DEClient:
         json_data: dict[str, Any] | list[Any] | None = None,
         **kwargs,
     ) -> Any:
-        client = await self._get_client()
-        headers = await self._headers()
-        resp = await client.post(
-            f"{config.api_url}{path}",
-            headers=headers,
-            json=json_data,
-            **kwargs,
-        )
-        resp.raise_for_status()
-        return self._parse_response(resp)
+        return await self._request("POST", path, json=json_data, **kwargs)
 
     def _parse_response(self, resp: httpx.Response) -> Any:
         content_type = resp.headers.get("content-type", "")

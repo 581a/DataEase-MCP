@@ -846,6 +846,16 @@ TOOLS = [
                     "description": "图表 ID（更新时使用）。不填则自动生成新的图表 ID",
                     "default": 0,
                 },
+                "custom_attr": {
+                    "type": "object",
+                    "description": "图表自定义属性（样式配置），包括 basicStyle、label、tooltip 等。不填则自动使用默认值或保留已有值",
+                    "default": None,
+                },
+                "custom_style": {
+                    "type": "object",
+                    "description": "图表自定义样式（轴配置），包括 yAxis、yAxisExt 等。不填则自动使用默认值或保留已有值",
+                    "default": None,
+                },
                 "result_count": {
                     "type": "integer",
                     "description": "结果展示条数限制，默认 1000",
@@ -1218,6 +1228,8 @@ TOOL_HANDLERS = {
         y_fields=args["y_fields"],
         y_fields_ext=args.get("y_fields_ext", None),
         chart_id=args.get("chart_id", 0),
+        custom_attr=args.get("custom_attr", None),
+        custom_style=args.get("custom_style", None),
         result_count=args.get("result_count", 1000),
     ),
     "get_chart_types": lambda args: chart.get_chart_types(),

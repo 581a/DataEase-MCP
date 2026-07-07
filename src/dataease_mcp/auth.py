@@ -8,6 +8,9 @@ class AuthManager:
     def __init__(self):
         self._token: str | None = None
 
+    def invalidate(self):
+        self._token = None
+
     async def ensure_auth(self, client: httpx.AsyncClient) -> str:
         if self._token:
             return self._token

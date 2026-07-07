@@ -96,9 +96,19 @@ async def save_chart(
     chart_id: int = 0,
     result_count: int = 1000,
     custom_attr: dict | None = None,
+    custom_style: dict | None = None,
 ) -> dict:
+    is_update = bool(chart_id)
     if not chart_id:
         chart_id = generate_view_id()
+
+    # 更新场景：读取已有图表配置，保留 customAttr/customStyle 等
+    existing = None
+    if is_update:
+        try:
+            existing = await get_chart_detail(int(chart_id), "snapshot")
+        except Exception:
+            pass
 
     _field_defaults(x_fields, chart_type, "d")
     _field_defaults(y_fields, chart_type, "q")
@@ -182,16 +192,45 @@ async def save_chart(
             }
             view_fields.append(vf)
 
+    # 更新场景：保留已有配置
+    if existing:
+        _existing_custom_attr = existing.get("customAttr", {})
+        _existing_custom_style = existing.get("customStyle", {})
+        _existing_custom_attr_mobile = existing.get("customAttrMobile", {})
+        _existing_custom_style_mobile = existing.get("customStyleMobile", {})
+        _existing_senior = existing.get("senior", {})
+        _existing_chart_type_val = existing.get("chartType", "private")
+        _existing_render = existing.get("render", "antv")
+        _existing_data_from = existing.get("dataFrom", "dataset")
+        _existing_result_mode = existing.get("resultMode", "custom")
+        _existing_style_priority = existing.get("stylePriority", "view")
+    else:
+        _existing_custom_attr = {}
+        _existing_custom_style = {}
+        _existing_custom_attr_mobile = {}
+        _existing_custom_style_mobile = {}
+        _existing_senior = {}
+        _existing_chart_type_val = "private"
+        _existing_render = "antv"
+        _existing_data_from = "dataset"
+        _existing_result_mode = "custom"
+        _existing_style_priority = "view"
+
+    # 合并 senior（保留 _mcp_yAxisExt 等已有字段）
+    merged_senior = dict(_existing_senior)
+    if y_fields_ext:
+        merged_senior["_mcp_yAxisExt"] = y_fields_ext
+
     body = {
         "id": chart_id,
         "title": title,
         "sceneId": dashboard_id,
         "tableId": dataset_id,
         "type": chart_type,
-        "render": "antv",
-        "chartType": "private",
-        "dataFrom": "dataset",
-        "resultMode": "custom",
+        "render": _existing_render,
+        "chartType": _existing_chart_type_val,
+        "dataFrom": _existing_data_from,
+        "resultMode": _existing_result_mode,
         "resultCount": result_count,
         "xAxis": x_fields,
         "yAxis": y_fields,
@@ -206,12 +245,12 @@ async def save_chart(
         "viewFields": view_fields,
         "flowMapStartName": [],
         "flowMapEndName": [],
-        "customAttr": custom_attr if custom_attr else {},
-        "customAttrMobile": {},
-        "customStyle": {},
-        "customStyleMobile": {},
-        "senior": {"_mcp_yAxisExt": y_fields_ext} if y_fields_ext else {},
-        "stylePriority": "view",
+        "customAttr": custom_attr if custom_attr else _existing_custom_attr,
+        "customAttrMobile": _existing_custom_attr_mobile,
+        "customStyle": custom_style if custom_style else _existing_custom_style,
+        "customStyleMobile": _existing_custom_style_mobile,
+        "senior": merged_senior,
+        "stylePriority": _existing_style_priority,
         "isPlugin": False,
         "refreshViewEnable": False,
         "linkageActive": False,
